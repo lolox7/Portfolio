@@ -1,5 +1,11 @@
-<script>
+<template>
+    
+</template>
 
+<script>
+export default {
+
+}
 </script>
 
 
@@ -8,6 +14,3 @@
 </style>
 
 
-<template>
-    
-</template>

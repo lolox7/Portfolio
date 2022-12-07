@@ -1,17 +1,18 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+
 <p>voici un peu de texte </p>
+
+<BackgroundColorChanger/>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import BackgroundColorChanger from './components/BackgroundColorChanger.vue'
 
 export default {
-  // name: 'App',
-  // components: {
-  //   HelloWorld
-  // }
+
+  components: {
+    BackgroundColorChanger
+  }
 }
 </script>
 
@@ -23,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+/* vous trouverez apres les tests css que j'ai fait */
+  background-color: rgb(13, 123, 219);
+  width: 100%;
+  height: auto;
 }
 </style>
