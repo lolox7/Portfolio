@@ -1,32 +1,54 @@
 <template>
-
-<p>voici un peu de texte </p>
-
-<BackgroundColorChanger/>
+  <HeaderPrincipal/>
+  <div id="bodyPage">
+    <BackgroundColorChanger/>
+    <LetterCounter/>
+  </div>
+  
 </template>
 
 <script>
+import HeaderPrincipal from './components/HeaderPrincipal.vue';
 import BackgroundColorChanger from './components/BackgroundColorChanger.vue'
+import LetterCounter from './components/LetterCounter.vue';
 
 export default {
 
   components: {
-    BackgroundColorChanger
-  }
+    HeaderPrincipal,
+    BackgroundColorChanger,
+    LetterCounter
+}
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-/* vous trouverez apres les tests css que j'ai fait */
-  background-color: rgb(13, 123, 219);
-  width: 100%;
-  height: auto;
+text-align: center;
 }
+
+#bodyPage {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px plum solid;
+  padding: 7px;
+}
+
+/* vous trouverez apres les tests css que j'ai fait */
+  /* width: 100%;
+  height: auto; 
+  display: flex;
+}
+
+body{
+  background-color: aquamarine;
+  display: flex;
+}
+
+div{
+  width: fit-content;
+  border: 3px solid black;
+}
+*/
+
 </style>
