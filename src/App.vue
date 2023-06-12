@@ -1,6 +1,13 @@
 <template>
-  <HeaderPrincipal/>
+  
+  <H1 id="title">
+      vous trouverez en dessous de ça une page web en construction
+  </H1>
+
   <div id="bodyPage">
+    
+    
+    
     <BackgroundColorChanger/>
     <LetterCounter/>
   </div>
@@ -8,16 +15,14 @@
 </template>
 
 <script>
-import HeaderPrincipal from './components/HeaderPrincipal.vue';
 import BackgroundColorChanger from './components/BackgroundColorChanger.vue'
-import LetterCounter from './components/LetterCounter.vue';
+
+
 
 export default {
 
   components: {
-    HeaderPrincipal,
-    BackgroundColorChanger,
-    LetterCounter
+    BackgroundColorChanger
 }
 }
 </script>
@@ -34,21 +39,15 @@ text-align: center;
   padding: 7px;
 }
 
-/* vous trouverez apres les tests css que j'ai fait */
-  /* width: 100%;
-  height: auto; 
-  display: flex;
-}
-
 body{
   background-color: aquamarine;
-  display: flex;
+
 }
 
 div{
   width: fit-content;
   border: 3px solid black;
 }
-*/
+
 
 </style>

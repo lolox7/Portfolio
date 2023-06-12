@@ -21,7 +21,7 @@ export default {
 <style>
 #colorChanger {
     width: 45%;
-    height: auto;
+    height:105px;
     background-color: crimson; 
     
 
